@@ -1,0 +1,9 @@
+<head>
+    <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+</head>
+<body>
+    <h1>{{.PageTitle}}</h1>
+    <div hx-get="/todos" hx-trigger="load">
+        <div>Loading...</div>
+    </div>
+</body>
