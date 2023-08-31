@@ -28,9 +28,9 @@ type TodoPageData struct {
 func main() {
 	router := chi.NewRouter()
 
-	pageTmpl := template.Must(template.ParseFiles("page.html"))
-	tableTmpl := template.Must(template.ParseFiles("table.html"))
-	rowTmpl := template.Must(template.ParseFiles("row.html"))
+	pageTmpl := template.Must(template.ParseFiles("components/page.html"))
+	tableTmpl := template.Must(template.ParseFiles("components/table.html"))
+	rowTmpl := template.Must(template.ParseFiles("components/row.html"))
 
 	tableData := TodoTableData{
 		Todos: []Todo{
