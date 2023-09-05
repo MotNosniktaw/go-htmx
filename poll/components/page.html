@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+    </head>
+    <body>
+        <h1>Poll Counter</h1>
+        <div hx-get="/poll" hx-trigger="every 1s" hx-target="#poll-counter">
+            You have polled <span id="poll-counter" >{{.}}</span> times.
+        </div>
+    </body>
+    </html>
