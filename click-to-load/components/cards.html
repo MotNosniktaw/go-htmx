@@ -1,0 +1,7 @@
+<ul>
+    {{ range .}}
+        <li >
+            <button hx-get="/card/{{.Id}}" hx-trigger="click" hx-swap="outerHTML">Click me!</button>
+        </li>
+    {{end}}
+</ul>

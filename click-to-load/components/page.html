@@ -1,0 +1,9 @@
+<head>
+    <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+</head>
+<body>
+    <h1>Click to Load</h1>
+    <div hx-get="/cards" hx-trigger="load">
+        <div>Loading...</div>
+    </div>
+</body>
