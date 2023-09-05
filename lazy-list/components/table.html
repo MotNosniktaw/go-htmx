@@ -1,5 +1,5 @@
 <ul>
     {{range .Todos}}
-        <li hx-get="/todo/{{.Id}}" hx-trigger="load">loading...</li>
+        <li hx-get="/todo/{{.Id}}" hx-trigger="revealed">loading...</li>
     {{end}}
 </ul>
