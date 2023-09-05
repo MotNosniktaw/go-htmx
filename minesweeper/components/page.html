@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+    </head>
+    <body style="text-align: center;">
+        <h1>Minesweeper</h1>
+        <p>There are 9 cards. 1 of them is a bomb. Click cards to reveal what is underneath. How long will you survive?</p>
+        <div id="board" style="display: flex; align-items: center;width: 100%; justify-content: center;">
+            <button hx-get="/board" hx-target="#board" hx-swap="innerHTML">Click to Start!</button>
+        </div>
+        <div id="end-game-message"></div>
+    </body>
+</html>
